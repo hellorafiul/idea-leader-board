@@ -4,7 +4,24 @@
 /* Common CSS */
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: #F3F1FF;
   
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container{
+  width: 1170px;
+  background-color: #fff;
+}
+.header-title {
+  color: #562EFF;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-bottom: 10px;
 }
 
 /***************
@@ -61,4 +78,75 @@ cursor: pointer;
  border-bottom: 2px solid #fff;
  padding: 0 5px 7px 5px;
  transition: .5s;
+}
+
+
+/***************
+Header Top CSS
+****************/
+.header {
+  padding-bottom: 50px;
+}
+.header-top{
+
+}
+.players-list{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: space-evenly;
+grid-row-gap: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+}
+.player-img img{
+  width: 56px;
+}
+.player-name {
+  padding-left: 15px;
+}
+.horizontal{
+  border-bottom: 2px solid #ddd;
+  margin: 35px;
+}
+
+/* Top Blogs CSS */
+
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 40px;
+}
+.blog {
+  display: flex;
+  margin-left: 35px;
+  box-shadow: 4px 7px 47px -4px #ddd;
+  margin-right: 35px;
+  padding: 15px 10px;
+  border-radius: 12px;
+}
+.blog:hover {
+  box-shadow: 8px 10px 52px 2px #ddd;
+}
+.blog-img img{
+  width:224px ;
+}
+.blog-title {
+  font-size: 20px;
+  width: 240px;
+  padding-left: 30px;
+  color: #333365;
+}
+.blog-title h3:hover{
+  color: #562EFF;
+  cursor: pointer;
+}
+.blog-title p {
+  font-size: 13px;
+}
+.blog-title a {
+  text-decoration: none;
+  color: #562EFF;
 }
