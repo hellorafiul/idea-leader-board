@@ -1,0 +1,64 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common CSS */
+body{
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/***************
+Main Menu 
+****************/
+
+.mainmenu{
+background-color: #562EFF ;
+min-height: 94px;
+display: flex;
+}
+.menu {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo-area img{
+  width: 40px;
+  height: 50px;
+}
+.logo-area{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-area span{
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.menu-item{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.menu-item a{
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+  margin-right: 35px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 5px;
+
+}
+.menu-item a:hover{
+ border-bottom: 2px solid #fff;
+ padding: 0 5px 7px 5px;
+ transition: .5s;
+}
