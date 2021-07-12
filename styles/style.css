@@ -5,7 +5,6 @@
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #F3F1FF;
-  
 }
 .main, .latest-courses {
   display: flex;
@@ -17,6 +16,7 @@ body{
   width: 1170px;
   background-color: #fff;
   border-radius: 5px;
+  box-shadow: 3px 3px 25px 0px #ddd;
 }
 .header-title {
   color: #562EFF;
@@ -207,4 +207,52 @@ color: #FFC014;
 .ratting-area span{
 color: #A2A2A2;
 padding: 0 15px;
+}
+
+/* Contact Us CSS */
+
+.contact-us {
+
+}
+.contact {
+  display: flex;
+  text-align: center;
+  padding: 70px 0px;
+}
+.contact p, h3{
+  font-family: Roboto;
+  color: #6e6969;
+  line-height: 30px;
+}
+.contact-icon{
+  color: #562EFF;
+  font-size: 50px;
+}
+.sales, .support {
+  box-shadow: 3px 3px 25px 0px #ddd;
+  margin: 10px 40px;
+  padding: 30px;
+  border-radius: 5px;
+}
+.sales:hover, .support:hover {
+  transform: scale(1.05);
+  transition: transform .5s ease-out;
+  cursor: pointer;
+}
+.support button {
+  background: #562EFF;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 35px;
+  border: none;
+  border-radius: 0px 30px;
+  cursor: pointer;
+}
+.support button:hover {
+  border-radius: 30px 0px;
+  transition: .5s ease-out;
+}
+.contact-link{
+  color: #7dc6d1;
+  display: block;
 }
