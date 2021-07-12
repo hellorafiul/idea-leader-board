@@ -205,8 +205,11 @@ color: #FFC014;
 color: #A2A2A2;
 padding: 0 15px;
 }
-.ratting-area p{
-padding: 0 15px;
+.ratting-area p {
+  padding: 6px 8px;
+  background-color: #FFE4E8;
+  border-radius: 50px;
+  margin-top: -3px;
 }
 
 /* Contact Us CSS */
