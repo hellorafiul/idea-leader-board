@@ -256,3 +256,67 @@ padding: 0 15px;
   color: #7dc6d1;
   display: block;
 }
+.contact-link:hover{
+  font-weight: bold;
+}
+
+/**********************
+ Media Queries 
+ **********************/
+ 
+ /* Mobile Devices */
+@media only screen and (max-width:688px){
+  .container{
+    width: 100%;
+  }
+  .header-title {
+    text-align: center;
+    font-size: 40px;
+    padding-left: 0;
+    border-bottom: 4px solid;
+    margin: 50px 178px;
+    border-radius: 40px 40px;
+}
+  .player {
+    flex-direction: column;
+    padding-left: 0;
+}
+.player-name {
+  font-size: 20px;
+}
+  .players-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .horizontal {
+  border-bottom: 0;
+
+}
+
+.blogs {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.main, .latest-courses {
+  display: grid;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+element.style {
+  font-size: 40px;
+  padding-bottom: 17px;
+  margin: 50px 140px;
+}
+.course-item {
+  margin: 40px 0;
+  padding: 30px;
+}
+.course-item img {
+  width: 100%;
+}
+.contact {
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.sales, .support {
+  margin: 40px 40px;
+}
