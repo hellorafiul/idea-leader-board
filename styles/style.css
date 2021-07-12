@@ -88,9 +88,6 @@ Header Top CSS
 .header {
   padding-bottom: 50px;
 }
-.header-top{
-
-}
 .players-list{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -208,12 +205,12 @@ color: #FFC014;
 color: #A2A2A2;
 padding: 0 15px;
 }
+.ratting-area p{
+padding: 0 15px;
+}
 
 /* Contact Us CSS */
 
-.contact-us {
-
-}
 .contact {
   display: flex;
   text-align: center;
@@ -329,5 +326,34 @@ element.style {
   padding: 20px 0px;
 }
 .sales, .support {
-  margin: 40px 40px;
+  margin: 40px 40px;}
 }
+
+
+  /* Mobile Devices max-width:688px */
+  @media only screen and (max-width: 992px) and (min-width: 688px)  {
+    .players-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+    .blogs {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .container {
+    width: 100%;
+}
+  .main, .latest-courses {
+    flex-direction: column;
+    padding: 0 20px;
+}
+.course-item {
+  margin-bottom: 35px;
+}
+
+.contact {
+  flex-direction: column;
+}
+
+.support {
+  margin-top: 35px;
+}
+      }
