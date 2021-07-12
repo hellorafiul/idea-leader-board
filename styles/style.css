@@ -7,15 +7,16 @@ body{
   background-color: #F3F1FF;
   
 }
-.main {
+.main, .latest-courses {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .container{
   width: 1170px;
   background-color: #fff;
+  border-radius: 5px;
 }
 .header-title {
   color: #562EFF;
@@ -104,8 +105,17 @@ grid-row-gap: 30px;
 .player-img img{
   width: 56px;
 }
+.player-img img:hover{
+  transform: scale(1.5);
+  transition: transform .5s ease-out;
+  padding-right: 10px;
+}
 .player-name {
   padding-left: 15px;
+}
+.player-name:hover {
+  cursor: pointer;
+  color: #562EFF;
 }
 .horizontal{
   border-bottom: 2px solid #ddd;
@@ -129,6 +139,8 @@ grid-row-gap: 30px;
 }
 .blog:hover {
   box-shadow: 8px 10px 52px 2px #ddd;
+  transform: scale(1.05);
+  transition: transform .5s ease-out;
 }
 .blog-img img{
   width:224px ;
@@ -149,4 +161,50 @@ grid-row-gap: 30px;
 .blog-title a {
   text-decoration: none;
   color: #562EFF;
+}
+
+/* Latest Course CSS */
+
+.course-item {
+  box-shadow: 3px 3px 25px 0px #ddd;
+  padding: 10px;
+  border-radius: 16px;
+}
+.course-item:hover {
+  transform: scale(1.05);
+  transition: transform .5s ease-out;
+  cursor: pointer;
+}
+.course-item img {
+  width: 320px;
+}
+.course-item h3 {
+  font-size: 20px;
+  width: 243px;
+  margin-bottom: 0;
+}
+.course-item h3:hover {
+  color: #562EFF;
+}
+.course-item p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ED6B4F;
+  padding: 0;
+  margin-top: 5px;
+}
+.ratting-area{
+display: flex;
+}
+.filled{
+color: #FFC014;
+}
+.empty{
+  color:#AEAEAE;
+  ;
+}
+.ratting-area span{
+color: #A2A2A2;
+padding: 0 15px;
 }
