@@ -264,7 +264,7 @@ padding: 0 15px;
  Media Queries 
  **********************/
  
- /* Mobile Devices */
+ /* Mobile Devices max-width:688px */
 @media only screen and (max-width:688px){
   .container{
     width: 100%;
@@ -274,7 +274,6 @@ padding: 0 15px;
     font-size: 40px;
     padding-left: 0;
     border-bottom: 4px solid;
-    margin: 50px 178px;
     border-radius: 40px 40px;
 }
   .player {
@@ -291,11 +290,23 @@ padding: 0 15px;
   border-bottom: 0;
 
 }
-
+.blog{
+  display: block;
+}
 .blogs {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.blog-img{
+  width: 100%;
+}
+.blog-img img {
+  width: 100%;
+}
+.blog-title {
+  width: 100%;
+  padding-left:0px;
+}
 .main, .latest-courses {
   display: grid;
   justify-content: space-evenly;
